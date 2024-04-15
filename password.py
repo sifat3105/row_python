@@ -1,9 +1,9 @@
 import random
 
-target = 10
-for _ in range(99):
+target = 90
+while True:
     matched = False
-    for _ in range(3):
+    for _ in range(7):
         number = int(''.join(str(random.randint(0, 9)) for _ in range(2)))
         print(number)
         if target == number:
@@ -13,4 +13,4 @@ for _ in range(99):
         print('pass match')
         break
 else:
-    print("not matched after 10 time")
+    print("not matchede")
